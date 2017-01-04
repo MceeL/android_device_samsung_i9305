@@ -6,17 +6,17 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/nameless/config/common.mk)
+$(call inherit-product, vendor/cm/config/commoni_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/i9305/full_i9305.mk)
 
 # Configure dalvik heap
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+#$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := i9305
-PRODUCT_NAME := nameless_i9305
+PRODUCT_NAME := cm_i9305
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-I9305
 PRODUCT_MANUFACTURER := samsung
